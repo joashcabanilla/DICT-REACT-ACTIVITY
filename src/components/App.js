@@ -1,8 +1,9 @@
 import Ship from "./Ship"
+import "../style/ship.css"
 
 function App() {
   return (
-    <div>
+    <div className="appContainer">
       <Ship />
     </div>
   );

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import "../style/ship.css"
 
 function Ship() {
     const [ship, setShip] = useState([]);
@@ -37,13 +38,15 @@ function Ship() {
 
     return (
         <div className="mainContainer">
+
             <div className="searchContainer">
+                <h1 className="shipTitle">LIST OF SHIP</h1>
                 <input className="searchBox" type="text" placeholder="SEARCH SHIP NAME OR SHIP TYPE" value={shipName} onChange={(e) => {
                     setShipName(e.target.value);
                 }} />
             </div>  
             <div className="tableContainer">
-                <table>
+                <table className="shipTable">
                     <thead>
                     <tr>
                         <th>Ship Image</th>
